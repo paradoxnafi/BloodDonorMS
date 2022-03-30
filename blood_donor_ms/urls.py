@@ -19,7 +19,7 @@ from post import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name='home'),
+    path('', include('post.urls')),
     path('authentication/', include('authentication.urls')),
 
 ]
